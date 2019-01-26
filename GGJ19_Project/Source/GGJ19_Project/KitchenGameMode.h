@@ -21,7 +21,9 @@ enum class EMainDishes : uint8
 {
 	None,
 	Lobster,
-	Crab
+	Crab,
+	Chicken,
+	Beef
 };
 
 UENUM()
@@ -29,7 +31,8 @@ enum class ESeasons : uint8
 {
 	None,
 	SaltPepper,
-	Paprika
+	Paprika,
+	Butter
 };
 
 UENUM()

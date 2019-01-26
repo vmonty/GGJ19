@@ -1,0 +1,79 @@
+DlgVersion 7
+DlgName "NewDlgDialogue"
+DlgGuid {  A -2042852685 B 1159396341 C -639843705 D 1440149948 }
+Node_Speech StartNode
+{
+	Text ""
+	SpeakerState "None"
+	bIsVirtualParent False
+	OwnerName "None"
+	bCheckChildrenOnEvaluation False
+	VoiceSoundWave ""
+	VoiceDialogueWave ""
+	Children
+	{
+		{  TargetIndex 0 Text "" SpeakerState "None" bIncludeInAllOptionListIfUnsatisfied True }
+		{  TargetIndex 1 Text "" SpeakerState "None" bIncludeInAllOptionListIfUnsatisfied True }
+	}
+}
+Node Nodes
+{
+	// 0
+	Node_SpeechSequence 
+	{
+		OwnerName "None"
+		bCheckChildrenOnEvaluation False
+		Children { {  TargetIndex 2 Text "Next" SpeakerState "None" bIncludeInAllOptionListIfUnsatisfied True } }
+	}
+	// 1
+	Node_Selector 
+	{
+		SelectorType "EDlgNodeSelectorType::DlgNodeSelectorFirst"
+		OwnerName "None"
+		bCheckChildrenOnEvaluation True
+	}
+	// 2
+	Node_Speech 
+	{
+		Text "Receta 1"
+		SpeakerState "None"
+		bIsVirtualParent False
+		OwnerName "None"
+		bCheckChildrenOnEvaluation False
+		VoiceSoundWave ""
+		VoiceDialogueWave ""
+		Children
+		{
+			{  TargetIndex 3 Text "Next" SpeakerState "None" bIncludeInAllOptionListIfUnsatisfied True }
+			{  TargetIndex 4 Text "" SpeakerState "None" bIncludeInAllOptionListIfUnsatisfied True }
+		}
+	}
+	// 3
+	Node_Speech 
+	{
+		Text ""
+		SpeakerState "None"
+		bIsVirtualParent False
+		OwnerName "None"
+		bCheckChildrenOnEvaluation False
+		VoiceSoundWave ""
+		VoiceDialogueWave ""
+	}
+	// 4
+	Node_Speech 
+	{
+		Text ""
+		SpeakerState "None"
+		bIsVirtualParent False
+		OwnerName "None"
+		bCheckChildrenOnEvaluation False
+		VoiceSoundWave ""
+		VoiceDialogueWave ""
+	}
+	// 5
+	Node_End 
+	{
+		OwnerName "None"
+		bCheckChildrenOnEvaluation False
+	}
+}
