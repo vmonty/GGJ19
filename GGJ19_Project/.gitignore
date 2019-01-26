@@ -50,7 +50,7 @@ SourceArt/**/*.tga
 
 # Binary Files
 Binaries/*
-!Binaries/Win64/*.dll
+!Binaries/Win64/*
 Plugins/*/Binaries/*
 
 # Builds
