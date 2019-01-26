@@ -49,8 +49,8 @@ void AKitchenGameMode::NextCookingPhase()
 	if (CurrentPhase == ECookingPhase::CookPhase)
 	{
 		CurrentPhase = ECookingPhase::ResultPhase;
-	}
-	*/
+	}*/
+	
 }
 
 void AKitchenGameMode::SetDishChosen(EMainDishes NewDish)
