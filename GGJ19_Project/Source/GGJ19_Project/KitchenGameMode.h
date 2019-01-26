@@ -43,18 +43,18 @@ enum class ECookWays : uint8
 	Boiled
 };
 
-USTRUCT()
+USTRUCT(Blueprintable)
 struct FDish
 {
-	GENERATED_BODY()
+	GENERATED_USTRUCT_BODY()
 
-	UPROPERTY()
+	UPROPERTY(EditAnywhere, BlueprintReadWrite)
 	EMainDishes MainDish;
 
-	UPROPERTY()
+	UPROPERTY(EditAnywhere, BlueprintReadWrite)
 	ESeasons Seasons;
 
-	UPROPERTY()
+	UPROPERTY(EditAnywhere, BlueprintReadWrite)
 	ECookWays CookWays;
 };
 
@@ -65,7 +65,6 @@ UCLASS()
 class GGJ19_PROJECT_API AKitchenGameMode : public AGameModeBase
 {
 	GENERATED_BODY()
-	
 public:
 	AKitchenGameMode();
 
@@ -74,6 +73,8 @@ public:
 	UFUNCTION()
 	void NextCookingPhase();
 
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Gameplay")
+	FDish MissionDish;
 
 protected:
 
@@ -123,8 +124,7 @@ private:
 	UPROPERTY(VisibleAnywhere, Category = "Gameplay")
 	ECookWays CookWayChosen;
 
-	UPROPERTY(VisibleAnywhere, Category = "Gameplay")
-	FDish MissionDish;
+	
 
 	FDish GenerateMainDish() const;
 

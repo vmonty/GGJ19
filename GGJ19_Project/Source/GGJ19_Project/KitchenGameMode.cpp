@@ -34,6 +34,7 @@ ECookWays AKitchenGameMode::GetCookWayChosen() const
 	return CookWayChosen;
 }
 
+
 void AKitchenGameMode::NextCookingPhase()
 {
 	CurrentPhase = (ECookingPhase)((uint8)CurrentPhase + (uint8)1);

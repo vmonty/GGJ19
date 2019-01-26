@@ -2,7 +2,7 @@
 	"BuildId": "4541578",
 	"Modules": 
 	{
-		"DlgSystem": "UE4Editor-DlgSystem.dll",
-		"DlgSystemEditor": "UE4Editor-DlgSystemEditor.dll"
+		"DlgSystem": "UE4Editor-DlgSystem-101.dll",
+		"DlgSystemEditor": "UE4Editor-DlgSystemEditor-101.dll"
 	}
 }
