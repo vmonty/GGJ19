@@ -19,6 +19,21 @@ ECookingPhase AKitchenGameMode::GetCurrentCookingPhase() const
 	return CurrentPhase;
 }
 
+EMainDishes AKitchenGameMode::GetDishChosen() const
+{
+	return DishChosen;
+}
+
+ESeasons AKitchenGameMode::GetSeasonChosen() const
+{
+	return SeasonChosen;
+}
+
+ECookWays AKitchenGameMode::GetCookWayChosen() const
+{
+	return CookWayChosen;
+}
+
 void AKitchenGameMode::NextCookingPhase()
 {
 	CurrentPhase = (ECookingPhase)((uint8)CurrentPhase + (uint8)1);

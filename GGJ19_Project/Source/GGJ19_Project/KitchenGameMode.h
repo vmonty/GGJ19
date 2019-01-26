@@ -19,6 +19,7 @@ enum class ECookingPhase : uint8
 UENUM()
 enum class EMainDishes : uint8
 {
+	None,
 	Lobster,
 	Crab
 };
@@ -26,6 +27,7 @@ enum class EMainDishes : uint8
 UENUM()
 enum class ESeasons : uint8
 {
+	None,
 	SaltPepper,
 	Paprika
 };
@@ -33,6 +35,7 @@ enum class ESeasons : uint8
 UENUM()
 enum class ECookWays : uint8
 {
+	None,
 	Fried,
 	Boiled
 };
@@ -65,7 +68,7 @@ public:
 
 	void BeginPlay() override;
 
-	UFUNCTION(BlueprintCallable, Category = "Gameplay")
+	UFUNCTION()
 	void NextCookingPhase();
 
 
@@ -74,7 +77,15 @@ protected:
 	UFUNCTION(BlueprintPure, Category = "GamePhase")
 	ECookingPhase GetCurrentCookingPhase() const;
 
-	
+	UFUNCTION(BlueprintPure, Category = "GamePhase")
+	EMainDishes GetDishChosen() const;
+
+	UFUNCTION(BlueprintPure, Category = "GamePhase")
+	ESeasons GetSeasonChosen() const;
+
+	UFUNCTION(BlueprintPure, Category = "GamePhase")
+	ECookWays GetCookWayChosen() const;
+
 	UFUNCTION(BlueprintCallable, Category = "Gameplay")
 	void SetDishChosen(EMainDishes DishChosen);
 

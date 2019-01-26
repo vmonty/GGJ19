@@ -20,7 +20,7 @@ class GGJ19_PROJECT_API AKitchenPlayerController : public APlayerController
 public:
 	AKitchenPlayerController();
 
-	UPROPERTY()
+	UPROPERTY(BlueprintCallable, Category = "Gameplay")
 	FGamePhaseChanged OnPhaseChanged;
 
 	void BeginPlay() override;
@@ -28,7 +28,7 @@ public:
 protected:
 
 	UFUNCTION(BlueprintCallable, Category = "Gameplay")
-	void ChangeCookPhase();
+	void NextCookPhase();
 
 private:
 

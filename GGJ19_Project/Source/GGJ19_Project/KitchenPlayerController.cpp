@@ -15,7 +15,7 @@ void AKitchenPlayerController::BeginPlay()
 	OnPhaseChanged.AddUniqueDynamic(Cast<AKitchenGameMode>(UGameplayStatics::GetGameMode(GetWorld())), &AKitchenGameMode::NextCookingPhase);
 }
 
-void AKitchenPlayerController::ChangeCookPhase()
+void AKitchenPlayerController::NextCookPhase()
 {
 	OnPhaseChanged.Broadcast();
 }
