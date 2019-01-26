@@ -18,27 +18,27 @@
 	"Launch": "$(EngineDir)/Binaries/Win64/UE4Editor.exe",
 	"BuildProducts": [
 		{
-			"Path": "$(ProjectDir)/Plugins/DlgSystem/Binaries/Win64/UE4Editor-DlgSystem-101.dll",
+			"Path": "$(ProjectDir)/Plugins/DlgSystem/Binaries/Win64/UE4Editor-DlgSystem-5232.dll",
 			"Type": "DynamicLibrary"
 		},
 		{
-			"Path": "$(ProjectDir)/Plugins/DlgSystem/Binaries/Win64/UE4Editor-DlgSystem-101.pdb",
+			"Path": "$(ProjectDir)/Plugins/DlgSystem/Binaries/Win64/UE4Editor-DlgSystem-5232.pdb",
 			"Type": "SymbolFile"
 		},
 		{
-			"Path": "$(ProjectDir)/Plugins/DlgSystem/Binaries/Win64/UE4Editor-DlgSystemEditor-101.dll",
+			"Path": "$(ProjectDir)/Plugins/DlgSystem/Binaries/Win64/UE4Editor-DlgSystemEditor-5232.dll",
 			"Type": "DynamicLibrary"
 		},
 		{
-			"Path": "$(ProjectDir)/Plugins/DlgSystem/Binaries/Win64/UE4Editor-DlgSystemEditor-101.pdb",
+			"Path": "$(ProjectDir)/Plugins/DlgSystem/Binaries/Win64/UE4Editor-DlgSystemEditor-5232.pdb",
 			"Type": "SymbolFile"
 		},
 		{
-			"Path": "$(ProjectDir)/Binaries/Win64/UE4Editor-GGJ19_Project-101.dll",
+			"Path": "$(ProjectDir)/Binaries/Win64/UE4Editor-GGJ19_Project-5232.dll",
 			"Type": "DynamicLibrary"
 		},
 		{
-			"Path": "$(ProjectDir)/Binaries/Win64/UE4Editor-GGJ19_Project-101.pdb",
+			"Path": "$(ProjectDir)/Binaries/Win64/UE4Editor-GGJ19_Project-5232.pdb",
 			"Type": "SymbolFile"
 		},
 		{

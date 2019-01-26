@@ -7,40 +7,41 @@
 #include "KitchenGameMode.generated.h"
 
 
-UENUM()
+UENUM(BlueprintType)
 enum class ECookingPhase : uint8
 {
 	CutPhase,
 	SeasonPhase,
 	CookPhase,
-	ResultPhase
+	ResultPhase,
+	None
 };
 
-UENUM()
+UENUM(BlueprintType)
 enum class EMainDishes : uint8
 {
-	None,
 	Lobster,
 	Crab,
 	Chicken,
-	Beef
+	Beef,
+	None
 };
 
-UENUM()
+UENUM(BlueprintType)
 enum class ESeasons : uint8
 {
-	None,
 	SaltPepper,
 	Paprika,
-	Butter
+	Butter,
+	None
 };
 
-UENUM()
+UENUM(BlueprintType)
 enum class ECookWays : uint8
 {
-	None,
-	Fried,
-	Boiled
+	Fried UMETA(DisplayName = "Fried"),
+	Boiled UMETA(DisplayName = "Boiled"),
+	None
 };
 
 USTRUCT(Blueprintable)
@@ -116,13 +117,13 @@ private:
 	ECookingPhase CurrentPhase;
 
 	UPROPERTY(VisibleAnywhere, Category = "Gameplay")
-	EMainDishes DishChosen;
+	EMainDishes DishChosen = EMainDishes::None;
 
 	UPROPERTY(VisibleAnywhere, Category = "Gameplay")
-	ESeasons SeasonChosen;
+	ESeasons SeasonChosen = ESeasons::None;
 
 	UPROPERTY(VisibleAnywhere, Category = "Gameplay")
-	ECookWays CookWayChosen;
+	ECookWays CookWayChosen = ECookWays::None;
 
 	
 
