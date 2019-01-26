@@ -1,0 +1,58 @@
+DlgVersion 7
+DlgName "Dialogue"
+DlgGuid {  A 946925652 B 1077493949 C 1507625091 D 1549799500 }
+Node_Speech StartNode
+{
+	Text ""
+	SpeakerState "None"
+	bIsVirtualParent False
+	OwnerName "None"
+	bCheckChildrenOnEvaluation False
+	VoiceSoundWave ""
+	VoiceDialogueWave ""
+	Children { {  TargetIndex 0 Text "Next" SpeakerState "None" bIncludeInAllOptionListIfUnsatisfied True } }
+}
+DlgParticipantClasses { {  ParticipantName "Recipe 1" ParticipantClass "" } }
+Node Nodes
+{
+	// 0
+	Node_SpeechSequence 
+	{
+		OwnerName "Recipe 1"
+		bCheckChildrenOnEvaluation False
+		SpeechSequence
+		{
+			{  Speaker "None" Text "Oh, I didn’t expect to find hot meal here.  It's been a long time since people left this area." SpeakerState "None" EdgeText "Next" VoiceSoundWave "" VoiceDialogueWave "" }
+			{  Speaker "None" Text "Let me see the menu, if it’s possible..." SpeakerState "None" EdgeText "Next" VoiceSoundWave "" VoiceDialogueWave "" }
+			{  Speaker "None" Text "Oh, there is shellfish! Perfect, I know what I want." SpeakerState "None" EdgeText "Next" VoiceSoundWave "" VoiceDialogueWave "" }
+			{  Speaker "None" Text "You're going to serve me the second piece, the [long one]." SpeakerState "None" EdgeText "" VoiceSoundWave "" VoiceDialogueWave "" }
+			{  Speaker "None" Text "Ah… I can still remember how I ate them every now and then in my youth." SpeakerState "None" EdgeText "Next" VoiceSoundWave "" VoiceDialogueWave "" }
+			{  Speaker "None" Text "It wasn’t a scarce thing back then. My friends and I enjoyed them at the beach restaurant." SpeakerState "None" EdgeText "Next" VoiceSoundWave "" VoiceDialogueWave "" }
+			{  Speaker "None" Text "What an amazing sea flavour!" SpeakerState "None" EdgeText "Next" VoiceSoundWave "" VoiceDialogueWave "" }
+			{  Speaker "None" Text "Our mouths [were on fire] when we taste it. It must be the sauce." SpeakerState "None" EdgeText "Next" VoiceSoundWave "" VoiceDialogueWave "" }
+			{  Speaker "None" Text "Well, I don’t want to be annoying. I just miss those wonderful years." SpeakerState "None" EdgeText "Next" VoiceSoundWave "" VoiceDialogueWave "" }
+			{  Speaker "None" Text "Life was easy back then. You cannot trust anyone now." SpeakerState "None" EdgeText "Next" VoiceSoundWave "" VoiceDialogueWave "" }
+			{  Speaker "None" Text "How much is gonna be? I can pay you well if the food deserve it." SpeakerState "None" EdgeText "Next" VoiceSoundWave "" VoiceDialogueWave "" }
+			{  Speaker "None" Text "Well, we can talk it later, because this recipe [need time to cook]." SpeakerState "None" EdgeText "Next" VoiceSoundWave "" VoiceDialogueWave "" }
+			{  Speaker "None" Text "My father didn’t like it. We had a very different taste." SpeakerState "None" EdgeText "Next" VoiceSoundWave "" VoiceDialogueWave "" }
+			{  Speaker "None" Text "My father didn’t like it. We had a very different taste." SpeakerState "None" EdgeText "Next" VoiceSoundWave "" VoiceDialogueWave "" }
+		}
+		InnerEdges
+		{
+			{  TargetIndex -1 Text "Next" SpeakerState "None" bIncludeInAllOptionListIfUnsatisfied True }
+			{  TargetIndex -1 Text "Next" SpeakerState "None" bIncludeInAllOptionListIfUnsatisfied True }
+			{  TargetIndex -1 Text "Next" SpeakerState "None" bIncludeInAllOptionListIfUnsatisfied True }
+			{  TargetIndex -1 Text "" SpeakerState "None" bIncludeInAllOptionListIfUnsatisfied True }
+			{  TargetIndex -1 Text "Next" SpeakerState "None" bIncludeInAllOptionListIfUnsatisfied True }
+			{  TargetIndex -1 Text "Next" SpeakerState "None" bIncludeInAllOptionListIfUnsatisfied True }
+			{  TargetIndex -1 Text "Next" SpeakerState "None" bIncludeInAllOptionListIfUnsatisfied True }
+			{  TargetIndex -1 Text "Next" SpeakerState "None" bIncludeInAllOptionListIfUnsatisfied True }
+			{  TargetIndex -1 Text "Next" SpeakerState "None" bIncludeInAllOptionListIfUnsatisfied True }
+			{  TargetIndex -1 Text "Next" SpeakerState "None" bIncludeInAllOptionListIfUnsatisfied True }
+			{  TargetIndex -1 Text "Next" SpeakerState "None" bIncludeInAllOptionListIfUnsatisfied True }
+			{  TargetIndex -1 Text "Next" SpeakerState "None" bIncludeInAllOptionListIfUnsatisfied True }
+			{  TargetIndex -1 Text "Next" SpeakerState "None" bIncludeInAllOptionListIfUnsatisfied True }
+			{  TargetIndex -1 Text "Next" SpeakerState "None" bIncludeInAllOptionListIfUnsatisfied True }
+		}
+	}
+}
