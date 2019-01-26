@@ -6,8 +6,8 @@
 	{
 		"MajorVersion": 4,
 		"MinorVersion": 21,
-		"PatchVersion": 1,
-		"Changelist": 4613538,
+		"PatchVersion": 2,
+		"Changelist": 4753647,
 		"CompatibleChangelist": 4541578,
 		"IsLicenseeVersion": 0,
 		"IsPromotedBuild": 1,
@@ -24,6 +24,22 @@
 		{
 			"Path": "$(EngineDir)/Binaries/Win64/UE4Editor-Cmd.exe",
 			"Type": "Executable"
+		},
+		{
+			"Path": "$(ProjectDir)/Plugins/DlgSystem/Binaries/Win64/UE4Editor-DlgSystem.dll",
+			"Type": "DynamicLibrary"
+		},
+		{
+			"Path": "$(ProjectDir)/Plugins/DlgSystem/Binaries/Win64/UE4Editor-DlgSystem.pdb",
+			"Type": "SymbolFile"
+		},
+		{
+			"Path": "$(ProjectDir)/Plugins/DlgSystem/Binaries/Win64/UE4Editor-DlgSystemEditor.dll",
+			"Type": "DynamicLibrary"
+		},
+		{
+			"Path": "$(ProjectDir)/Plugins/DlgSystem/Binaries/Win64/UE4Editor-DlgSystemEditor.pdb",
+			"Type": "SymbolFile"
 		},
 		{
 			"Path": "$(EngineDir)/Plugins/2D/Paper2D/Binaries/Win64/UE4Editor-Paper2D.dll",
@@ -1766,6 +1782,10 @@
 			"Type": "BuildResource"
 		},
 		{
+			"Path": "$(ProjectDir)/Plugins/DlgSystem/Binaries/Win64/UE4Editor.modules",
+			"Type": "RequiredResource"
+		},
+		{
 			"Path": "$(EngineDir)/Plugins/2D/Paper2D/Binaries/Win64/UE4Editor.modules",
 			"Type": "RequiredResource"
 		},
@@ -2065,6 +2085,10 @@
 	"RuntimeDependencies": [
 		{
 			"Path": "$(ProjectDir)/GGJ19_Project.uproject",
+			"Type": "UFS"
+		},
+		{
+			"Path": "$(ProjectDir)/Plugins/DlgSystem/DlgSystem.uplugin",
 			"Type": "UFS"
 		},
 		{
