@@ -12,10 +12,11 @@ AKitchenPlayerController::AKitchenPlayerController()
 
 void AKitchenPlayerController::BeginPlay()
 {
-	OnPhaseChanged.AddUniqueDynamic(Cast<AKitchenGameMode>(UGameplayStatics::GetGameMode(GetWorld())), &AKitchenGameMode::NextCookingPhase);
+	//OnPhaseChanged.AddUniqueDynamic(Cast<AKitchenGameMode>(UGameplayStatics::GetGameMode(GetWorld())), &AKitchenGameMode::NextCookingPhase);
 }
 
 void AKitchenPlayerController::NextCookPhase()
 {
-	OnPhaseChanged.Broadcast();
+	//OnPhaseChanged.Broadcast();
+	Cast<AKitchenGameMode>(UGameplayStatics::GetGameMode(GetWorld()))->NextCookingPhase();
 }

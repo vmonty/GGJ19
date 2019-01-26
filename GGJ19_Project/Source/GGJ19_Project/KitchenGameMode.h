@@ -7,54 +7,55 @@
 #include "KitchenGameMode.generated.h"
 
 
-UENUM()
+UENUM(BlueprintType)
 enum class ECookingPhase : uint8
 {
 	CutPhase,
 	SeasonPhase,
 	CookPhase,
-	ResultPhase
+	ResultPhase,
+	None
 };
 
-UENUM()
+UENUM(BlueprintType)
 enum class EMainDishes : uint8
 {
-	None,
 	Lobster,
 	Crab,
 	Chicken,
-	Beef
+	Beef,
+	None
 };
 
-UENUM()
+UENUM(BlueprintType)
 enum class ESeasons : uint8
 {
-	None,
 	SaltPepper,
 	Paprika,
-	Butter
+	Butter,
+	None
 };
 
-UENUM()
+UENUM(BlueprintType)
 enum class ECookWays : uint8
 {
-	None,
-	Fried,
-	Boiled
+	Fried UMETA(DisplayName = "Fried"),
+	Boiled UMETA(DisplayName = "Boiled"),
+	None
 };
 
-USTRUCT()
+USTRUCT(Blueprintable)
 struct FDish
 {
-	GENERATED_BODY()
+	GENERATED_USTRUCT_BODY()
 
-	UPROPERTY()
+	UPROPERTY(EditAnywhere, BlueprintReadWrite)
 	EMainDishes MainDish;
 
-	UPROPERTY()
+	UPROPERTY(EditAnywhere, BlueprintReadWrite)
 	ESeasons Seasons;
 
-	UPROPERTY()
+	UPROPERTY(EditAnywhere, BlueprintReadWrite)
 	ECookWays CookWays;
 };
 
@@ -65,7 +66,6 @@ UCLASS()
 class GGJ19_PROJECT_API AKitchenGameMode : public AGameModeBase
 {
 	GENERATED_BODY()
-	
 public:
 	AKitchenGameMode();
 
@@ -74,6 +74,8 @@ public:
 	UFUNCTION()
 	void NextCookingPhase();
 
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Gameplay")
+	FDish MissionDish;
 
 protected:
 
@@ -115,16 +117,15 @@ private:
 	ECookingPhase CurrentPhase;
 
 	UPROPERTY(VisibleAnywhere, Category = "Gameplay")
-	EMainDishes DishChosen;
+	EMainDishes DishChosen = EMainDishes::None;
 
 	UPROPERTY(VisibleAnywhere, Category = "Gameplay")
-	ESeasons SeasonChosen;
+	ESeasons SeasonChosen = ESeasons::None;
 
 	UPROPERTY(VisibleAnywhere, Category = "Gameplay")
-	ECookWays CookWayChosen;
+	ECookWays CookWayChosen = ECookWays::None;
 
-	UPROPERTY(VisibleAnywhere, Category = "Gameplay")
-	FDish MissionDish;
+	
 
 	FDish GenerateMainDish() const;
 
