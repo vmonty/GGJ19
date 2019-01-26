@@ -37,11 +37,11 @@ ECookWays AKitchenGameMode::GetCookWayChosen() const
 
 void AKitchenGameMode::NextCookingPhase()
 {
-	CurrentPhase = (ECookingPhase)((uint8)CurrentPhase + (uint8)1);
+	//CurrentPhase = (ECookingPhase)((uint8)CurrentPhase + (uint8)1);
 	
-	/*if (CurrentPhase == ECookingPhase::CutPhase)
+	if (CurrentPhase == ECookingPhase::CutPhase)
 	{
-		CurrentPhase = ECookingPhase::SeasonPhase;
+		CurrentPhase = ECookingPhase::CookPhase;
 	}
 	if (CurrentPhase == ECookingPhase::SeasonPhase)
 	{
@@ -50,7 +50,7 @@ void AKitchenGameMode::NextCookingPhase()
 	if (CurrentPhase == ECookingPhase::CookPhase)
 	{
 		CurrentPhase = ECookingPhase::ResultPhase;
-	}*/
+	}
 	
 }
 
