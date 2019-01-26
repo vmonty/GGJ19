@@ -25,8 +25,9 @@ public:
 
 	void BeginPlay() override;
 
-private:
+protected:
 
+	UFUNCTION(BlueprintCallable, Category = "Gameplay")
 	void ChangeCookPhase();
 
 private:
