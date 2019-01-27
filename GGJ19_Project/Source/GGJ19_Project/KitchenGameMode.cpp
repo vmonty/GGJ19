@@ -92,13 +92,12 @@ FDish AKitchenGameMode::GenerateMainDish() const
 	//Para hacerlo procedural
 	
 	FDish TargetDish;
-	/*TargetDish.MainDish = (EMainDishes)FMath::RandRange(0, 1);
+	TargetDish.MainDish = (EMainDishes)FMath::RandRange(0, 1);
 	TargetDish.Seasons = (ESeasons)FMath::RandRange(0, 1);
-	TargetDish.CookWays = (ECookWays)FMath::RandRange(0, 1);
-	*/
-	TargetDish.MainDish = EMainDishes::Lobster;
-	TargetDish.Seasons = ESeasons::Paprika;
-	TargetDish.CookWays = ECookWays::Cooked;
+	TargetDish.CookWays = (ECookWays)FMath::RandRange(0, 2);
+	//TargetDish.MainDish = EMainDishes::Lobster;
+	//TargetDish.Seasons = ESeasons::Paprika;
+	//TargetDish.CookWays = ECookWays::Cooked;
 	return TargetDish;
 
 
