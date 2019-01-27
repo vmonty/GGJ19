@@ -39,8 +39,9 @@ enum class ESeasons : uint8
 UENUM(BlueprintType)
 enum class ECookWays : uint8
 {
-	Fried UMETA(DisplayName = "Fried"),
-	Boiled UMETA(DisplayName = "Boiled"),
+	Undercooked UMETA(DisplayName = "Undercooked"),
+	Cooked UMETA(DisplayName = "Cooked"),
+	Overcooked UMETA(DisplayName = "Overcooked"),
 	None
 };
 

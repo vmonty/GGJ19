@@ -41,13 +41,13 @@ void AKitchenGameMode::NextCookingPhase()
 	
 	if (CurrentPhase == ECookingPhase::CutPhase)
 	{
-		CurrentPhase = ECookingPhase::CookPhase;
+		CurrentPhase = ECookingPhase::SeasonPhase;
 	}
-	if (CurrentPhase == ECookingPhase::SeasonPhase)
+	else if (CurrentPhase == ECookingPhase::SeasonPhase)
 	{
 		CurrentPhase = ECookingPhase::CookPhase;
 	}
-	if (CurrentPhase == ECookingPhase::CookPhase)
+	else if (CurrentPhase == ECookingPhase::CookPhase)
 	{
 		CurrentPhase = ECookingPhase::ResultPhase;
 	}
@@ -98,7 +98,7 @@ FDish AKitchenGameMode::GenerateMainDish() const
 	*/
 	TargetDish.MainDish = EMainDishes::Lobster;
 	TargetDish.Seasons = ESeasons::Paprika;
-	TargetDish.CookWays = ECookWays::Boiled;
+	TargetDish.CookWays = ECookWays::Cooked;
 	return TargetDish;
 
 
